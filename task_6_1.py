@@ -72,3 +72,13 @@ def zero_hight(matrix):
     for i in matrix:
         print(i)
 zero_hight(matrix)
+print()
+# 10. Обнуление элементов ниже главной диагонали
+def zero_bellow(matrix):
+    for i in range(len(matrix)):
+        for j in range(len(matrix[i])):
+            if j < i:
+                matrix[i][j] = 0
+    for i in matrix:
+        print(i)
+zero_bellow(matrix)
