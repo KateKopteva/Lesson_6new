@@ -37,3 +37,13 @@ def index_max_sum(matrix):
         summ_row.append(sum(matrix[i]))
     return summ_row.index(max(summ_row))
 print(index_max_sum(matrix))
+# 6. Индекс колонки с максимальной суммой
+def index_column_maxsum(matrix):
+    summ_column = []
+    for i in range(len(matrix)):
+        t = 0
+        for j in matrix:
+            t+= j[i]
+        summ_column.append(t)
+    return summ_column.index((max(summ_column)))
+print(index_column_maxsum(matrix))
