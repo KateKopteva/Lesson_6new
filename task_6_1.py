@@ -47,3 +47,10 @@ def index_column_maxsum(matrix):
         summ_column.append(t)
     return summ_column.index((max(summ_column)))
 print(index_column_maxsum(matrix))
+# 7. Индекс ряда с минимальной суммой
+def index_min_sum(matrix):
+    summ_row = []
+    for i in range(len(matrix)):
+        summ_row.append(sum(matrix[i]))
+    return summ_row.index(min(summ_row))
+print(index_min_sum(matrix))
