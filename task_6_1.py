@@ -82,3 +82,10 @@ def zero_bellow(matrix):
     for i in matrix:
         print(i)
 zero_bellow(matrix)
+# 11. Создание двух новых матриц:
+def new_matrix_a(x, y, c, d):
+    matrix_a = [[randint(c,d) for i in range(x)]for j in range(y)]
+    matrix_b = [[randint(c, d) for i in range(x)] for j in range(y)]
+    print(matrix_a)
+    print(matrix_b)
+new_matrix_a(3,3,1,9)
