@@ -64,3 +64,11 @@ def index_column_minsum(matrix):
         summ_column.append(t)
     return summ_column.index((min(summ_column)))
 print(index_column_minsum(matrix))
+# 9. Обнуление элементов выше главной диагонали
+def zero_hight(matrix):
+    for i in range(len(matrix)):
+        for j in range(i+1, len(matrix)):
+            matrix[i][j]=0
+    for i in matrix:
+        print(i)
+zero_hight(matrix)
