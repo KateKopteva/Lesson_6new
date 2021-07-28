@@ -54,3 +54,13 @@ def index_min_sum(matrix):
         summ_row.append(sum(matrix[i]))
     return summ_row.index(min(summ_row))
 print(index_min_sum(matrix))
+# 8. Индекс колонки с минимальной суммой
+def index_column_minsum(matrix):
+    summ_column = []
+    for i in range(len(matrix)):
+        t = 0
+        for j in matrix:
+            t+= j[i]
+        summ_column.append(t)
+    return summ_column.index((min(summ_column)))
+print(index_column_minsum(matrix))
