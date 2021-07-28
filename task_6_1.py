@@ -30,3 +30,10 @@ def summ_element(matrix):
         total += sum(matrix[i])
     return total
 print(summ_element(matrix))
+# 5. Индекс ряда с максимальной суммой
+def index_max_sum(matrix):
+    summ_row = []
+    for i in range(len(matrix)):
+        summ_row.append(sum(matrix[i]))
+    return summ_row.index(max(summ_row))
+print(index_max_sum(matrix))
