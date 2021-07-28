@@ -15,3 +15,11 @@ def max_element(matrix):
         dup.append(maxi)
     return max(dup)
 print(max_element(matrix))
+# 3. Минимальный элемент матрицы
+def min_element(matrix):
+    dup2 = []
+    for lists in matrix:
+        mini = min(lists)
+        dup2.append(mini)
+    return min(dup2)
+print(min_element(matrix))
