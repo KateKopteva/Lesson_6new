@@ -23,3 +23,10 @@ def min_element(matrix):
         dup2.append(mini)
     return min(dup2)
 print(min_element(matrix))
+# 4. Сумма всех элементов матрицы
+def summ_element(matrix):
+    total = 0
+    for i in range(len(matrix)):
+        total += sum(matrix[i])
+    return total
+print(summ_element(matrix))
